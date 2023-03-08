@@ -14,3 +14,4 @@
 - [常用API](api.md "零点文档-常用API")
     - [ling.toast()](api.md?id=lingtoast：请求显示一则toast消息)
     - [ling.newDialog()](api.md?id=lingnewdialog：构造完全的对话框)
+    - [ling.sleep()](api.md?id=lingsleep：挂起当前线程一段时间)
