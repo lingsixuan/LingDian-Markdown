@@ -25,7 +25,7 @@
 
 其中，String类型的参数很好理解。不做解释。
 
-[Function]，表示需要一个函数作为参数。该函数的签名为：
+[Function]，就是[回调函数](lua/name.md?id=回调函数)表示需要一个函数作为参数。该函数的签名为：
 
 **void function(int dialogID)**
 
