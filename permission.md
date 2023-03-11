@@ -10,8 +10,8 @@
 - IS_ALL_FILE：完全的磁盘访问权限
 - IS_OS_EXECUTE：完全的系统控制权限
 
-> &emsp;&emsp;lua标准库提供了一系列操作磁盘文件的API，放在io包下，使用这些API来访问磁盘文件时，将会检查脚本是否具有 **IS_ALL_FILE** 权限，如果没有此权限，那么脚本则只能访问自己私有目录下的文件 ~~(私有目录位置通过ling.getFilesDir()获得)~~ 。如果在没有 **IS_ALL_FILE** 权限的情况下访问私有目录之外的文件，***将会抛出异常***。  
-&emsp;&emsp;**IS_OS_EXCEUTE**决定脚本是否有权执行shell命令。不具备此权限的前提下调用os.exceute()API，***将会抛出异常***。  
+> &emsp;&emsp;lua标准库提供了一系列操作磁盘文件的API，放在io包下，使用这些API来访问磁盘文件时，将会检查脚本是否具有 **IS_ALL_FILE** 权限，如果没有此权限，那么脚本则只能访问自己私有目录下的文件 ~~(私有目录位置通过ling.getFilesDir()获得)~~ 。如果在没有 **IS_ALL_FILE** 权限的情况下访问私有目录之外的文件， **将会抛出异常** 。  
+&emsp;&emsp;**IS_OS_EXCEUTE**决定脚本是否有权执行shell命令。不具备此权限的前提下调用os.exceute()API， **将会抛出异常** 。  
 &emsp;&emsp;请注意！即使具备 **IS_OS_EXCEUTE** 权限，也不能使用rm命令删除磁盘上的文件。要删除文件，请使用io库中的文件操作API。
 
 ---
