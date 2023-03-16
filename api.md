@@ -34,3 +34,11 @@ print("Hello world！")
 
 !> 如果你在以保护模式运行此API，那么异常将被捕获，无法起到退出程序的作用。  
 请尽量使用此API来终止运行，而不是os.exit()，os.exit()会导致解释器进程同步退出。
+
+## ling.isVPN()：检查系统是否正在使用VPN上网
+> boolean ling.isVPN()
+
+返回*true*为正在使用VPN  
+返回*false*为非VPN
+
+!> 这项检测对于拥有root权限的用户来说非常容易绕过，root模式下请不要太信任它的结果。
